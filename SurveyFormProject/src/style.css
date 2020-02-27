@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  font-family: Courier, Times New Roman;
+  background-color: rgb(178,216,216);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgb(245,245,245);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#name-container, #email-container, #number-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: baseline;
+  margin: 20px;
+}
+
+#name-label, #email-label, #number-label {
+  margin: 10px;
+  width: 40%;
+  text-align: right;
+}
+
+#dropdown-container, #radio-button-container, #checkbox-container, #textarea-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: baseline;
+  margin: 20px;
+  margin-left: 20%;
+}
+
+#dropdown-question, #radio-button-question, #checkbox-question, #textarea-question {
+  margin: 10px;
+  width: 50%;
+  text-align: start;
+}
+
+.radio-button-options, .checkbox-options {
+  text-align: left;
+}
+
+#radio-buttons, #checkboxes {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  color: white;
+  background-color: rgb(0,150,255);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  color: rgb(245,245,245);
+  text-align: right;
+  margin-right: 20px;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  
+  main {
+    width: 90%;
+  }
+  
+  body {
+    font-size: 0.8em;
+  }
+  
+  #dropdown-container, #radio-button-container, #checkbox-container, #textarea-container {
+    margin: 0px;
+  }
+}
