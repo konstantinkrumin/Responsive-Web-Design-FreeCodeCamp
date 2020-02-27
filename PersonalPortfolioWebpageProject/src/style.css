@@ -1,0 +1,211 @@
+:root {
+  --lighter-gray: rgb(88, 89, 91);
+  --darker-gray: rgb(65, 64, 66);
+  --orange: rgb(254, 101, 42);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: var(--lighter-gray);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navbar {
+  font-size: 1.4em;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--orange);
+}
+
+.nav-link {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+  background-color: var(--darker-gray);
+}
+
+main {
+  padding-top: 20px;
+}
+
+#welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  color: var(--orange);
+  background-color: var(--darker-gray);
+}
+
+#skills_container {
+  border-style: dashed;
+  border-color: var(--orange);
+  padding: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects_title {
+  padding-top: 10vh;
+  color: var(--orange);
+}
+
+#projects_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-tile {
+  text-decoration: none;
+  margin-bottom: auto;
+}
+
+.project-tile:hover .project_name {
+    color: var(--darker-gray);
+    background-color: var(--orange);
+}
+
+.project_screenshot {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.project_name {
+  font-size: 1.5em;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--darker-gray);
+  color: var(--orange);
+}
+
+brackets {
+  color: var(--orange);
+}
+
+#contact {
+  padding-top: 20px;
+  background-color: var(--orange);
+  color: black;
+}
+
+#profile_links_flexbox {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile_links {
+  margin: 20px 5px 20px 5px;
+}
+
+#linkedin_logo, #github_logo_mark, #twitter_logo, #email_logo {
+  width: 32px;
+}
+
+#linkedin_logo:hover, #github_logo_mark:hover, #twitter_logo:hover, #email_logo:hover {
+  width: 48px;
+}
+
+#freecodecamp_logo {
+  height: 32px;
+}
+
+#freecodecamp_logo:hover {
+  height: 48px;
+}
+
+footer {
+  text-align: right;
+  padding: 0 20px 0 20px;
+  background-color: var(--darker-gray);
+  color: var(--orange);
+}
+
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2, #navbar {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: 2.0em;
+  }
+  
+  h2, #navbar {
+    font-size: 1.5em;
+  }
+  
+  #skills_container, .project_name, footer {
+    font-size: 1.0em;
+  }
+  
+  #skills_container {
+    text-align: left;
+  }
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2, #navbar {
+    font-size: 1.0em;
+  }
+  
+  #skills_container, .project_name, footer {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 550px) {
+  #projects_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
