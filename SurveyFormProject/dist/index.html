@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Web Design Projects - Build a Survey Form (2nd Version)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body> 
+  <header>
+    <h1 id="title">Survey Form</h1>
+  </header>
+  
+  <main>
+    <p id="description">Please answer the following questions</p>
+    
+    <form id="survey-form">
+      <p id="name-container">
+        <label for="name" id="name-label">* Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </p>
+      
+      <p id="email-container">
+        <label for="email" id="email-label">* Email:</label>
+        <input id="email" type="email" placeholder="Enter your Email" required>
+      </p>
+      
+      <p id="number-container">
+        <label for="number" id="number-label"> Age:</label>
+        <input id="number" type="number" placeholder="Age" min="0" max="120">
+      </p>
+      
+      <div id="dropdown-container">
+        <p id="dropdown-question">Which is your favourite sportswear brand?</p>
+        <select id="dropdown">
+          <option value="adidas">Adidas</option>
+          <option value="nike">Nike</option>
+          <option value="puma">Puma</option>
+          <option value="reebok">Reebok</option>
+          <option value="new-balance">New Balance</option>
+          <option value="under-armour">Under Armour</option>
+          <option value="le-coq-sportif">Le Coq Sportif</option>
+          <option value="umbro">Umbro</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div id="radio-button-container">
+        <p id="radio-button-question">Would you be interested to receive exclusive discount offers from your favourite sportswear brand?</p>
+        <div id="radio-buttons">
+          <label for="definitely-radio-option" class="radio-button-options">
+            <input id="definitely-radio-option" type="radio" name="exclusive-offers" value="definitely"> Definitely
+          </label>
+        
+          <label for="maybe-radio-option" class="radio-button-options">
+            <input id="maybe-radio-option" type="radio" name="exclusive-offers" value="maybe"> Maybe
+          </label>
+        
+          <label for="no-radio-option" class="radio-button-options">
+            <input id="no-radio-option" type="radio" name="exclusive-offers" value="no"> No
+          </label>
+        </div>
+        
+      </div>
+      
+      <div id="checkbox-container">
+        <p id="checkbox-question">What offers would you be the most interested in?</p>
+        
+        <div id="checkboxes">
+          <label for="mens-apparel" class="checkbox-options">
+            <input id="mens-apparel" type="checkbox" name="offer-checkboxes" value="mens-apparel"> Men's Apparel
+          </label>
+        
+          <label for="womens-apparel" class="checkbox-options">
+            <input id="womens-apparel" type="checkbox" name="offer-checkboxes" value="womens-apparel"> Women's Apparel
+          </label>
+        
+          <label for="kids-apparel" class="checkbox-options">
+            <input id="kids-apparel" type="checkbox" name="offer-checkboxes" value="kids-apparel"> Kids' Apparel
+          </label>
+        
+          <label for="shoes" class="checkbox-options">
+            <input id="shoes" type="checkbox" name="offer-checkboxes" value="shoes"> Shoes
+          </label>
+        </div>
+      </div>
+      
+      <div id="textarea-container">
+        <p id="textarea-question">Any comments or suggestions?</p>
+        <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+      </div>
+      
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Konstantin Krumin 2020</p>
+  </footer>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
